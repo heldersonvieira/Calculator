@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/calculator.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    
+    <title>Calculadora</title>
+</head>
+
+<body>
+    <main class="container">
+        <div class="display-container row">
+            <span class="display button" id="display"></span>
+            <input value="C" class="button clear" type="button" onclick="Calc.clearAll()">
+        </div>
+        <div class="row">
+            <input value="7" class="button" id="number" onclick="Get.number(7)" type="button">
+            <input value="8" class="button" id="number" onclick="Get.number(8)" type="button">
+            <input value="9" class="button" id="number" onclick="Get.number(9)" type="button">
+            <input value="+" class="button operator" onclick="Get.operator('+')" type="button">
+        </div>
+        <div class="row">
+            <input value="4" class="button" id="number" onclick="Get.number(4)" type="button">
+            <input value="5" class="button" id="number" onclick="Get.number(5)" type="button">
+            <input value="6" class="button" id="number" onclick="Get.number(6)" type="button">
+            <input value="-" class="button operator" onclick="Get.operator('-')" type="button">
+        </div>
+        <div class="row">
+            <input value="1" class="button" id="number" onclick="Get.number(1)" type="button">
+            <input value="2" class="button" id="number" onclick="Get.number(2)" type="button">
+            <input value="3" class="button" id="number" onclick="Get.number(3)" type="button">
+            <input value="x" class="button operator" onclick="Get.operator('*')" type="button">
+        </div>
+        <div class="row">
+            <input value="." class="button dot" id="number" onclick="Get.number('.')" type="button">
+            <input value="0" class="button" id="number" onclick="Get.number(0)" type="button">
+            <input value="=" class="button result" type="button" onclick="Calc.result()">
+            <input value="/" class="button operator" onclick="Get.operator('/')" type="button">
+        </div>
+    </main>
+</body>
+
+<script src="./main.js"></script>
+
+</html>
